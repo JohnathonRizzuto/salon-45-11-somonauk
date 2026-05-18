@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Salon 45:11 — Hair, Color & Care in Somonauk, IL</title>
+<meta name="description" content="Salon 45:11 in Somonauk, IL. Custom color, cuts, perms, waxing, and kid-friendly hair care by Brittany — 14+ years experience. House calls available." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --cream: #fbf6f1;
+    --blush: #f3d4cf;
+    --mauve: #7a3a4c;
+    --mauve-deep: #5c2735;
+    --brass: #c9a96a;
+    --charcoal: #2b1a20;
+    --muted: #7a6a6f;
+    --line: rgba(43, 26, 32, 0.12);
+    --shadow: 0 18px 40px -22px rgba(92, 39, 53, 0.32);
+    --shadow-lg: 0 30px 70px -28px rgba(92, 39, 53, 0.45);
+    --radius: 14px;
+    --radius-lg: 22px;
+    --font-display: "Italiana", serif;
+    --font-body: "Manrope", "Helvetica Neue", sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--font-body);
+    color: var(--charcoal);
+    background: var(--cream);
+    line-height: 1.6;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+
+  .container {
+    width: min(1140px, 92%);
+    margin: 0 auto;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    color: var(--charcoal);
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: 0.005em;
+  }
+  h1 { font-size: clamp(2.6rem, 6vw, 4.4rem); }
+  h2 { font-size: clamp(2rem, 4vw, 3rem); }
+  h3 { font-size: 1.5rem; }
+  .eyebrow {
+    font-family: var(--font-body);
+    text-transform: uppercase;
+    letter-spacing: 0.28em;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--mauve);
+  }
+
+  /* ---------- HEADER ---------- */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(251, 246, 241, 0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+    gap: 24px;
+  }
+  .brand {
+    font-family: var(--font-display);
+    font-size: 1.55rem;
+    color: var(--mauve);
+    letter-spacing: 0.06em;
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+  }
+  .brand span { color: var(--brass); }
+  .nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    list-style: none;
+  }
+  .nav-links a {
+    font-size: 0.92rem;
+    color: var(--charcoal);
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+  .nav-links a:hover { color: var(--mauve); }
+  .nav-socials {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+  }
+  .nav-socials a {
+    display: inline-flex;
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: var(--blush);
+    align-items: center; justify-content: center;
+    color: var(--mauve-deep);
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+  .nav-socials a:hover { background: var(--mauve); color: var(--cream); transform: translateY(-2px); }
+  .nav-socials svg { width: 17px; height: 17px; }
+  .nav-cta-call {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border: 1.5px solid var(--charcoal);
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.88rem;
+    color: var(--charcoal);
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+  .nav-cta-call:hover { background: var(--charcoal); color: var(--cream); }
+
+  /* Desktop / mobile nav swap */
+  .mobile-only { display: none; }
+  @media (max-width: 880px) {
+    .nav-links, .nav-cta-call { display: none; }
+    .mobile-only { display: flex; }
+  }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    padding: 90px 0 100px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 70px;
+    align-items: center;
+  }
+  .hero-eyebrow { margin-bottom: 22px; }
+  .hero h1 {
+    margin-bottom: 24px;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--mauve);
+  }
+  .hero p.lede {
+    font-size: 1.12rem;
+    color: var(--muted);
+    margin-bottom: 36px;
+    max-width: 480px;
+  }
+  .hero-ctas {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  /* PRIMARY CTA — Call to Book (no booking platform on file) */
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--mauve);
+    color: var(--cream);
+    padding: 19px 38px;
+    border: none;
+    border-radius: 999px;
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 1.05rem;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+    animation: pulse-glow 2.6s ease-in-out infinite;
+  }
+  .btn-primary:hover {
+    transform: translateY(-3px);
+    background: var(--mauve-deep);
+    box-shadow: 0 36px 80px -28px rgba(92, 39, 53, 0.6);
+  }
+  .btn-primary svg { width: 18px; height: 18px; }
+  @keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 18px 40px -22px rgba(92, 39, 53, 0.32), 0 0 0 0 rgba(122, 58, 76, 0.35); }
+    50%      { box-shadow: 0 18px 40px -22px rgba(92, 39, 53, 0.32), 0 0 0 12px rgba(122, 58, 76, 0); }
+  }
+
+  /* SECONDARY CTA — outlined, smaller, no animation */
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: transparent;
+    color: var(--charcoal);
+    padding: 15px 26px;
+    border: 1.5px solid var(--charcoal);
+    border-radius: 999px;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.94rem;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+  .btn-secondary:hover { background: var(--charcoal); color: var(--cream); }
+
+  .hero-meta {
+    display: flex;
+    gap: 28px;
+    margin-top: 42px;
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+    flex-wrap: wrap;
+  }
+  .hero-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .hero-meta-item .label {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.7rem;
+    color: var(--mauve);
+    font-weight: 600;
+  }
+  .hero-meta-item .value {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    color: var(--charcoal);
+  }
+
+  /* Hero image */
+  .hero-photo {
+    position: relative;
+  }
+  .hero-photo .frame {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    aspect-ratio: 4 / 5;
+    box-shadow: var(--shadow-lg);
+  }
+  .hero-photo .frame img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+  }
+  .hero-photo .frame:hover img { transform: scale(1.04); }
+  .hero-photo::before {
+    content: "";
+    position: absolute;
+    inset: -22px;
+    background: var(--blush);
+    border-radius: var(--radius-lg);
+    z-index: -1;
+    transform: rotate(-2deg);
+  }
+  .hero-badge {
+    position: absolute;
+    bottom: 28px;
+    left: -22px;
+    background: var(--cream);
+    padding: 16px 22px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .hero-badge .stars {
+    color: var(--brass);
+    font-size: 1.15rem;
+    letter-spacing: 2px;
+  }
+  .hero-badge .text {
+    display: flex; flex-direction: column;
+    font-size: 0.82rem;
+    color: var(--muted);
+  }
+  .hero-badge .text strong {
+    color: var(--charcoal);
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 880px) {
+    .hero { padding: 60px 0 80px; }
+    .hero-grid { grid-template-columns: 1fr; gap: 50px; }
+    .hero-photo { order: -1; }
+    .hero-badge { left: 12px; bottom: 14px; }
+  }
+
+  /* ---------- ABOUT ---------- */
+  .about {
+    padding: 90px 0;
+    background: linear-gradient(180deg, var(--cream) 0%, #f6ece4 100%);
+  }
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 70px;
+    align-items: center;
+  }
+  .about-photo {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    aspect-ratio: 1;
+    box-shadow: var(--shadow);
+  }
+  .about-photo img { width: 100%; height: 100%; object-fit: cover; }
+  .about h2 { margin-bottom: 26px; }
+  .about p { color: var(--muted); margin-bottom: 18px; font-size: 1.04rem; }
+  .about-signature {
+    margin-top: 28px;
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    color: var(--mauve);
+    font-style: italic;
+  }
+  .about-signature small {
+    display: block;
+    font-family: var(--font-body);
+    font-style: normal;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    color: var(--muted);
+    margin-top: 6px;
+  }
+  @media (max-width: 880px) {
+    .about-grid { grid-template-columns: 1fr; gap: 40px; }
+  }
+
+  /* ---------- SERVICES ---------- */
+  .services {
+    padding: 100px 0;
+  }
+  .section-head {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .section-head .eyebrow { display: block; margin-bottom: 14px; }
+  .section-head p {
+    margin-top: 18px;
+    color: var(--muted);
+    max-width: 540px;
+    margin-inline: auto;
+  }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+  .service-card {
+    background: var(--cream);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 34px 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--blush);
+  }
+  .service-card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--mauve), var(--brass));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+  }
+  .service-card:hover::before { transform: scaleX(1); }
+  .service-card h3 {
+    margin-bottom: 10px;
+    color: var(--charcoal);
+  }
+  .service-card .price {
+    font-family: var(--font-display);
+    font-size: 1.7rem;
+    color: var(--mauve);
+    margin-bottom: 14px;
+    display: block;
+  }
+  .service-card .price small {
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    color: var(--muted);
+    margin-left: 4px;
+    font-weight: 500;
+  }
+  .service-card p {
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  .price-footnote {
+    margin-top: 36px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.86rem;
+    font-style: italic;
+  }
+
+  /* ---------- SPECIALTIES ---------- */
+  .specialties {
+    padding: 90px 0;
+    background: var(--charcoal);
+    color: var(--cream);
+  }
+  .specialties h2 { color: var(--cream); }
+  .specialties .section-head .eyebrow { color: var(--brass); }
+  .specialties .section-head p { color: rgba(251, 246, 241, 0.7); }
+  .specialty-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 28px;
+  }
+  .specialty {
+    text-align: center;
+    padding: 30px 22px;
+    border: 1px solid rgba(201, 169, 106, 0.22);
+    border-radius: var(--radius-lg);
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  .specialty:hover {
+    background: rgba(201, 169, 106, 0.08);
+    transform: translateY(-4px);
+  }
+  .specialty .icon {
+    width: 56px; height: 56px;
+    margin: 0 auto 18px;
+    display: grid; place-items: center;
+    background: var(--mauve);
+    color: var(--cream);
+    border-radius: 50%;
+  }
+  .specialty .icon svg { width: 26px; height: 26px; }
+  .specialty h3 { color: var(--cream); font-size: 1.25rem; margin-bottom: 8px; }
+  .specialty p { color: rgba(251, 246, 241, 0.7); font-size: 0.92rem; }
+
+  /* ---------- REVIEWS / TESTIMONIALS ---------- */
+  .reviews {
+    padding: 100px 0;
+  }
+  .review-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 26px;
+  }
+  .review-card {
+    background: var(--cream);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 34px 30px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+  }
+  .review-card .stars {
+    color: var(--brass);
+    letter-spacing: 3px;
+    font-size: 1.05rem;
+    margin-bottom: 18px;
+  }
+  .review-card blockquote {
+    font-style: italic;
+    color: var(--charcoal);
+    font-size: 1.02rem;
+    margin-bottom: 22px;
+    flex-grow: 1;
+  }
+  .review-card cite {
+    font-style: normal;
+    font-weight: 600;
+    color: var(--mauve);
+    font-size: 0.92rem;
+  }
+
+  /* ---------- VISIT / CONTACT ---------- */
+  .visit {
+    padding: 90px 0;
+    background: var(--blush);
+  }
+  .visit-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 60px;
+    align-items: start;
+  }
+  .visit h2 { margin-bottom: 24px; }
+  .visit p.intro { color: var(--mauve-deep); margin-bottom: 30px; font-size: 1.04rem; }
+  .visit-block {
+    margin-bottom: 28px;
+  }
+  .visit-block h3 {
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.24em;
+    color: var(--mauve);
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  .visit-block .value {
+    font-family: var(--font-display);
+    font-size: 1.45rem;
+    color: var(--charcoal);
+    line-height: 1.35;
+  }
+  .visit-block a {
+    color: var(--charcoal);
+    transition: color 0.2s ease;
+    border-bottom: 1px solid transparent;
+  }
+  .visit-block a:hover { color: var(--mauve-deep); border-bottom-color: var(--mauve-deep); }
+  .hours-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .hours-table td {
+    padding: 9px 0;
+    border-bottom: 1px dashed rgba(43, 26, 32, 0.18);
+    font-size: 0.96rem;
+  }
+  .hours-table tr:last-child td { border-bottom: none; }
+  .hours-table td:first-child {
+    font-weight: 600;
+    color: var(--mauve-deep);
+  }
+  .hours-table td:last-child {
+    text-align: right;
+    color: var(--charcoal);
+  }
+  .map-wrap {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    aspect-ratio: 4 / 3;
+    background: var(--cream);
+  }
+  .map-wrap iframe {
+    width: 100%; height: 100%; border: 0;
+  }
+  @media (max-width: 880px) {
+    .visit-grid { grid-template-columns: 1fr; gap: 40px; }
+  }
+
+  /* ---------- PRE-FOOTER CTA BAND ---------- */
+  .cta-band {
+    padding: 100px 0;
+    background: linear-gradient(135deg, var(--mauve) 0%, var(--mauve-deep) 100%);
+    color: var(--cream);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .cta-band::before {
+    content: "";
+    position: absolute;
+    top: -50%; left: -10%;
+    width: 60%; height: 200%;
+    background: radial-gradient(circle, rgba(201, 169, 106, 0.18) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .cta-band .eyebrow {
+    color: var(--brass);
+    display: block;
+    margin-bottom: 20px;
+  }
+  .cta-band h2 {
+    color: var(--cream);
+    margin-bottom: 30px;
+    max-width: 660px;
+    margin-inline: auto;
+  }
+  .cta-band .btn-primary {
+    background: var(--brass);
+    color: var(--charcoal);
+    box-shadow: 0 26px 60px -18px rgba(201, 169, 106, 0.5);
+  }
+  .cta-band .btn-primary:hover {
+    background: var(--cream);
+    color: var(--mauve-deep);
+  }
+  .cta-band .sub {
+    margin-top: 22px;
+    font-size: 0.96rem;
+    color: rgba(251, 246, 241, 0.82);
+  }
+  .cta-band .sub a {
+    color: var(--brass);
+    font-weight: 600;
+    border-bottom: 1px solid var(--brass);
+  }
+
+  /* ---------- FOOTER ---------- */
+  footer {
+    background: var(--charcoal);
+    color: rgba(251, 246, 241, 0.78);
+    padding: 70px 0 30px;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 50px;
+  }
+  footer .brand {
+    color: var(--cream);
+    font-size: 1.7rem;
+    margin-bottom: 16px;
+    display: inline-flex;
+  }
+  footer .brand span { color: var(--brass); }
+  footer p, footer li, footer a {
+    font-size: 0.93rem;
+    color: rgba(251, 246, 241, 0.74);
+  }
+  footer h4 {
+    font-family: var(--font-display);
+    color: var(--cream);
+    font-size: 1.3rem;
+    margin-bottom: 18px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
+  footer ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  footer a:hover { color: var(--brass); }
+  .footer-socials {
+    display: flex;
+    gap: 14px;
+    margin-top: 22px;
+  }
+  .footer-socials a {
+    width: 38px; height: 38px;
+    background: rgba(251, 246, 241, 0.06);
+    color: var(--cream);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center; justify-content: center;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+  .footer-socials a:hover {
+    background: var(--mauve);
+    transform: translateY(-3px);
+  }
+  .footer-socials svg { width: 17px; height: 17px; }
+  .footer-bottom {
+    border-top: 1px solid rgba(251, 246, 241, 0.08);
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 0.85rem;
+    color: rgba(251, 246, 241, 0.5);
+  }
+  @media (max-width: 720px) {
+    .footer-grid { grid-template-columns: 1fr; gap: 36px; }
+  }
+
+  /* ---------- STICKY MOBILE CTA BAR ---------- */
+  .sticky-mobile-cta {
+    display: none;
+  }
+  @media (max-width: 880px) {
+    .sticky-mobile-cta {
+      display: flex;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 200;
+      background: var(--cream);
+      border-top: 1px solid var(--line);
+      padding: 12px 16px;
+      gap: 10px;
+      box-shadow: 0 -10px 30px -10px rgba(43, 26, 32, 0.18);
+    }
+    .sticky-mobile-cta .btn-primary {
+      flex: 2;
+      padding: 14px 18px;
+      font-size: 0.95rem;
+      justify-content: center;
+      animation: none;
+      box-shadow: 0 10px 22px -8px rgba(92, 39, 53, 0.45);
+    }
+    .sticky-mobile-cta .btn-secondary {
+      flex: 1;
+      padding: 14px 14px;
+      font-size: 0.85rem;
+      justify-content: center;
+    }
+    body { padding-bottom: 76px; }
+  }
+
+  /* ---------- SCROLL ANIMATIONS ---------- */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="#" class="brand">Salon 45<span>:</span>11</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#specialties">Specialties</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <div class="nav-socials">
+      <a href="https://www.facebook.com/salon4511/" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.55 9.88v-6.99H7.9V12h2.55V9.8c0-2.52 1.5-3.91 3.79-3.91 1.1 0 2.25.2 2.25.2v2.47h-1.27c-1.25 0-1.64.78-1.64 1.57V12h2.79l-.45 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+      </a>
+    </div>
+    <a href="tel:+18158261226" class="nav-cta-call">
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.11L8.09 9.9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.92z"/></svg>
+      (815) 826-1226
+    </a>
+  </div>
+</header>
+
+<!-- ============================================================
+     HERO
+============================================================ -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow hero-eyebrow">Hair, Color &amp; Care · Somonauk, IL</span>
+      <h1>Hair that <em>feels like home.</em></h1>
+      <p class="lede">Custom color, cuts, perms, and waxing by Brittany — a licensed cosmetologist with 14+ years behind the chair. Family-friendly, kids welcome, and house calls available across the area.</p>
+      <div class="hero-ctas">
+        <!-- PRIMARY CTA -- no booking platform on file, so Call to Book is the #1 action -->
+        <a href="tel:+18158261226" class="btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.11L8.09 9.9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call to Book
+        </a>
+        <a href="#services" class="btn-secondary">See Services</a>
+      </div>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <span class="label">Stylist</span>
+          <span class="value">Brittany</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="label">Experience</span>
+          <span class="value">14+ Years</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="label">House Calls</span>
+          <span class="value">Yes — by appt</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="frame">
+        <!-- REPLACE WITH REAL PHOTO of the salon interior or styling chair -->
+        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=80" alt="Salon styling chair and mirror" />
+      </div>
+      <div class="hero-badge">
+        <span class="stars">★★★★★</span>
+        <div class="text">
+          <strong>13+ reviews</strong>
+          loved by locals
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ABOUT
+============================================================ -->
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div class="about-photo reveal">
+      <!-- REPLACE WITH REAL PHOTO of Brittany / owner portrait -->
+      <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" alt="Hair stylist at work" />
+    </div>
+    <div class="about-copy reveal">
+      <span class="eyebrow">A salon by Brittany</span>
+      <h2>Small chair, big heart.</h2>
+      <p>Salon 45:11 is a private studio in downtown Somonauk where every appointment gets unhurried, one-on-one attention. Brittany has been behind the chair for over fourteen years — coloring, cutting, and caring for clients from toddlers to grandparents.</p>
+      <p>This is the kind of salon where the music isn’t too loud, the conversation is yours to lead, and your hair is the only thing on the schedule. Kids are welcome. Special needs accommodations are offered without a second thought. And if you can’t make it in, Brittany comes to you.</p>
+      <div class="about-signature">
+        “See you in the chair.”
+        <small>— Brittany, Owner &amp; Stylist</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICES
+============================================================ -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">The Menu</span>
+      <h2>Services &amp; Pricing</h2>
+      <p>Honest pricing for honest work. Custom quotes for color corrections and event styling — call for details.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <h3>Women’s Cut &amp; Style</h3>
+        <span class="price">$45<small>&#10033; starting</small></span>
+        <p>Wash, custom cut, and finish blowout. Includes a scalp massage and a no-pressure consultation.</p>
+      </div>
+      <div class="service-card reveal">
+        <h3>Men’s Cut</h3>
+        <span class="price">$25<small>&#10033;</small></span>
+        <p>Classic clipper or scissor cut, neck cleanup, and styling. Quick, clean, and never rushed.</p>
+      </div>
+      <div class="service-card reveal">
+        <h3>Kids’ Cut</h3>
+        <span class="price">$18<small>&#10033;</small></span>
+        <p>Patient cuts for little ones, including first haircuts and kids with special needs. We take our time.</p>
+      </div>
+      <div class="service-card reveal">
+        <h3>Full Color / Single Process</h3>
+        <span class="price">$80<small>&#10033; starting</small></span>
+        <p>Root-to-tip color for grays, refresh, or a brand-new shade. Custom-mixed in chair.</p>
+      </div>
+      <div class="service-card reveal">
+        <h3>Highlights / Dimensional Color</h3>
+        <span class="price">$110<small>&#10033; starting</small></span>
+        <p>Foils, balayage, and lived-in lightening designed for low-maintenance grow-out.</p>
+      </div>
+      <div class="service-card reveal">
+        <h3>Vivid Color</h3>
+        <span class="price">$140<small>&#10033; starting</small></span>
+        <p>Reds, pinks, violets, blues, and anything in between. Consultation always included.</p>
+      </div>
+      <div class="service-card reveal">
+        <h3>Perm</h3>
+        <span class="price">$95<small>&#10033; starting</small></span>
+        <p>Classic and modern texture services — soft body waves through tight curl.</p>
+      </div>
+      <div class="service-card reveal">
+        <h3>Facial Waxing</h3>
+        <span class="price">$15<small>&#10033;</small></span>
+        <p>Brow shaping, lip, and chin waxing in a calm, private setting.</p>
+      </div>
+    </div>
+    <p class="price-footnote">&#10033; Prices shown are placeholders — final pricing confirmed at consultation. Custom quotes available for color corrections, weddings, and event styling.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     SPECIALTIES
+============================================================ -->
+<section class="specialties" id="specialties">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">What Sets Us Apart</span>
+      <h2>Care that travels with you.</h2>
+      <p>Beyond the chair, Brittany meets clients where they are — at home, at the bedside, or anywhere a haircut is needed.</p>
+    </div>
+    <div class="specialty-grid">
+      <div class="specialty reveal">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2h-4v-7H10v7H5a2 2 0 0 1-2-2z"/></svg>
+        </div>
+        <h3>House Calls</h3>
+        <p>Can’t make it in? Brittany comes to your living room with everything she needs.</p>
+      </div>
+      <div class="specialty reveal">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <h3>Assisted Living &amp; Hospice</h3>
+        <p>Compassionate service for residents who need a familiar face and a gentle pace.</p>
+      </div>
+      <div class="specialty reveal">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.35-7-10a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 5.65-7 10-7 10z"/></svg>
+        </div>
+        <h3>Kids &amp; Special Needs</h3>
+        <p>A calm, patient chair for first haircuts and kids who need extra time.</p>
+      </div>
+      <div class="specialty reveal">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <h3>Evening &amp; Weekend</h3>
+        <p>Appointments designed around your work week — including Sundays.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     REVIEWS
+============================================================ -->
+<section class="reviews">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Kind Words</span>
+      <h2>From the chair.</h2>
+      <p>Themes pulled from real reviews. First names only.</p>
+    </div>
+    <div class="review-grid">
+      <div class="review-card reveal">
+        <span class="stars">★★★★★</span>
+        <blockquote>“Brittany takes her time and actually listens. My color came out exactly how I described it — and the price was a fraction of what I was paying in Aurora.”</blockquote>
+        <cite>— Sarah, Somonauk</cite>
+      </div>
+      <div class="review-card reveal">
+        <span class="stars">★★★★★</span>
+        <blockquote>“She’s amazing with my son who has sensory issues. He’ll sit for her when he won’t sit for anyone else. Worth the trip every single time.”</blockquote>
+        <cite>— Megan, Sandwich</cite>
+      </div>
+      <div class="review-card reveal">
+        <span class="stars">★★★★★</span>
+        <blockquote>“House call to my mom’s nursing home — Brittany made her feel beautiful again. We can’t thank her enough.”</blockquote>
+        <cite>— Karen, Plano</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     VISIT
+============================================================ -->
+<section class="visit" id="visit">
+  <div class="container visit-grid">
+    <div class="visit-copy reveal">
+      <span class="eyebrow">Come See Us</span>
+      <h2>Visit the studio.</h2>
+      <p class="intro">Tucked into downtown Somonauk. Easy parking on Washington Street.</p>
+
+      <div class="visit-block">
+        <h3>Address</h3>
+        <div class="value">
+          <a href="https://maps.apple.com/?q=320+E+Washington+St+Somonauk+IL+60552">
+            320 E Washington St<br />Somonauk, IL 60552
+          </a>
+        </div>
+      </div>
+
+      <div class="visit-block">
+        <h3>Phone</h3>
+        <div class="value">
+          <a href="tel:+18158261226">(815) 826-1226</a>
+        </div>
+      </div>
+
+      <div class="visit-block">
+        <h3>Hours</h3>
+        <table class="hours-table">
+          <tr><td>Monday</td><td>By appointment</td></tr>
+          <tr><td>Tuesday</td><td>9:00 am – 6:00 pm</td></tr>
+          <tr><td>Wednesday</td><td>9:00 am – 6:00 pm</td></tr>
+          <tr><td>Thursday</td><td>9:00 am – 7:00 pm</td></tr>
+          <tr><td>Friday</td><td>9:00 am – 5:00 pm</td></tr>
+          <tr><td>Saturday</td><td>9:00 am – 3:00 pm</td></tr>
+          <tr><td>Sunday</td><td>Closed</td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="map-wrap reveal">
+      <iframe
+        src="https://www.google.com/maps?q=320+E+Washington+St+Somonauk+IL+60552&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+        title="Salon 45:11 location"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PRE-FOOTER CTA BAND
+============================================================ -->
+<section class="cta-band">
+  <div class="container">
+    <span class="eyebrow">Ready When You Are</span>
+    <h2>Let’s get you in the chair.</h2>
+    <a href="tel:+18158261226" class="btn-primary">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.11L8.09 9.9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.92z"/></svg>
+      Call to Book
+    </a>
+    <p class="sub">Or message us on <a href="https://www.facebook.com/salon4511/" target="_blank" rel="noopener">Facebook</a> — we usually reply same-day.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="#" class="brand">Salon 45<span>:</span>11</a>
+        <p>Custom color, cuts, and care by Brittany — a Somonauk studio with 14+ years behind the chair. Kids welcome, house calls available.</p>
+        <div class="footer-socials">
+          <a href="https://www.facebook.com/salon4511/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.55 9.88v-6.99H7.9V12h2.55V9.8c0-2.52 1.5-3.91 3.79-3.91 1.1 0 2.25.2 2.25.2v2.47h-1.27c-1.25 0-1.64.78-1.64 1.57V12h2.79l-.45 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li><a href="https://maps.apple.com/?q=320+E+Washington+St+Somonauk+IL+60552">320 E Washington St</a></li>
+          <li><a href="https://maps.apple.com/?q=320+E+Washington+St+Somonauk+IL+60552">Somonauk, IL 60552</a></li>
+          <li><a href="tel:+18158261226">(815) 826-1226</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <ul>
+          <li>Mon — by appt</li>
+          <li>Tue–Wed · 9–6</li>
+          <li>Thu · 9–7</li>
+          <li>Fri · 9–5</li>
+          <li>Sat · 9–3</li>
+          <li>Sun · Closed</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Salon 45:11 · Somonauk, IL</span>
+      <span>Made for Brittany — site by Johnathon Builds.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky mobile CTA bar -->
+<div class="sticky-mobile-cta">
+  <a href="tel:+18158261226" class="btn-primary">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.11L8.09 9.9a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.92z"/></svg>
+    Call to Book
+  </a>
+  <a href="#services" class="btn-secondary">Services</a>
+</div>
+
+<script>
+  // Reveal on scroll
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.14 });
+  reveals.forEach((el) => io.observe(el));
+</script>
+
+</body>
+</html>
