@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://salon-45-11-somonauk.vercel.app/sitemap.xml
